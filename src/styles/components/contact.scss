@@ -1,0 +1,170 @@
+
+@import '../fragments/colors.scss';
+@import '../fragments/mixins.scss';
+
+
+.contact{
+    
+  
+    display:flex;
+   
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+    text-align: center;
+    width:100%;
+    .contact-section-titles{
+
+        font-size: 2rem;
+        font-weight: bolder;
+        position: relative;
+     
+       margin:0 auto;
+       text-align: center;
+       margin-bottom: 5rem;
+     
+       
+       
+
+        &::before{
+            content:"";
+            width:90px;
+            height:6px;
+            background-color: $main-color;
+            position: absolute;
+            top:40px;
+          
+
+        }
+
+    }
+
+    .form{
+        display:flex;
+        flex-direction: column;
+        gap:1rem;
+        margin-top: 2rem;
+        width:65%;
+       
+    }
+
+    .contact-details{
+       font-weight: 300;
+        width:70%;
+        line-height: 1.7rem;
+        margin-bottom: 1rem;
+        margin-top: -2rem;
+    }
+    input{
+        width:100%;
+        padding:1rem;
+        background-color: transparent;
+        outline:none;
+        border: none;
+        border-bottom:0.6px solid $main-color;
+       
+
+    
+
+        &::placeholder{
+
+           
+                color: rgb(221, 221, 221);
+                opacity: 1; 
+             font-size: 0.9rem;
+                font-family: monospace;
+           
+              
+        }
+       
+    }
+    textarea{
+      
+        padding:1rem;
+        background-color: transparent;
+        outline:none;
+        border: none;
+        border-bottom:0.6px solid $main-color;
+        color:$text-color;
+        resize: none;
+
+        &::placeholder{
+            color: rgb(221, 221, 221);
+            opacity: 1; /* Firefox */
+            font-size: 0.9rem;
+            font-family: monospace;
+        }
+    }
+
+    button{
+        background-color: transparent;
+        border:1px solid $main-color;
+        color:$main-color;
+        padding:0.8rem 2rem;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        transition: .4s ease;
+        cursor: pointer;
+        width:100%;
+        margin:0 auto;
+        margin-top: 1rem;
+    
+        &:hover{
+            border:1px solid $text-color;
+            color:$text-color;
+           
+    
+        }
+    }
+}
+
+
+
+/* RESPONSIVE STYLES */
+
+
+@media(max-width:970px){
+
+    .contact{
+  
+        .form{
+           
+            width:75%; 
+        }
+    
+  
+        }
+ 
+}
+@media(max-width:850px){
+
+    .contact{
+  
+        .form{
+           
+            width:85%; 
+        }
+    
+  
+        }
+ 
+}
+@media(max-width:650px){
+
+    .contact{
+  
+        .form{
+           
+            width:100%; 
+        }
+
+        .contact-details{
+            
+             width:95%;
+             
+         }
+  
+        }
+ 
+}

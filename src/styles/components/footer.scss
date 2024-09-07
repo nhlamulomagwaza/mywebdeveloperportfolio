@@ -1,0 +1,133 @@
+@import '../fragments/colors.scss';
+@import '../fragments/mixins.scss';
+
+
+
+.footer{
+    .footer-content{
+     padding:2rem;
+  
+     width:100%;
+        @include flex-row;
+        justify-content: space-between;
+
+
+        .footer-contact-details{
+
+            @include flex-row;
+            gap:2rem;
+
+            .phone{
+                @include flex-row;
+                gap:0.5rem;
+            }
+
+            .mail{
+                @include flex-row;
+                gap:0.5rem;
+            
+            }
+
+           
+        }
+        .footer-social-details{
+
+            @include flex-row;
+            gap:0.8rem;
+        }
+    }
+}
+
+.social-icons{
+
+    &:hover{
+        color:$main-color;
+        transition: .3s ease-in-out;
+    }
+}
+/* RESPONSIVE STYLES */
+
+
+@media(max-width:920px){
+
+    .footer{
+        .footer-content{
+         padding:2rem 1rem;
+      
+         width:100%;
+            @include flex-row;
+            justify-content: space-between;
+    
+    
+            .footer-contact-details{
+    
+                @include flex-row;
+                gap:2rem;
+    
+                .phone{
+                    @include flex-row;
+                    gap:0.5rem;
+                }
+    
+                .mail{
+                    @include flex-row;
+                    gap:0.5rem;
+                
+                }
+    
+               
+            }
+            .footer-social-details{
+    
+                @include flex-row;
+                gap:0.8rem;
+            }
+        }
+    }
+
+
+
+}
+@media(max-width:886px){
+
+    .footer{
+        .footer-content{
+         padding:2rem 1rem;
+      
+         width:100%;
+            @include flex-column;
+            flex-direction: column-reverse;
+            gap:1.3rem;
+            justify-content: center;
+            text-align: center;
+    
+    
+            .footer-contact-details{
+           display:none;
+               
+              
+    
+                .phone{
+                    @include flex-row;
+                    gap:0.5rem;
+                }
+    
+                .mail{
+                    @include flex-row;
+                    gap:0.5rem;
+                
+                }
+    
+               
+            }
+            .footer-social-details{
+    
+                @include flex-row;
+                gap:0.8rem;
+            }
+        }
+    }
+
+
+
+}

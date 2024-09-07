@@ -1,0 +1,15 @@
+/* SNOW PARTICLES */
+
+
+.snow{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    top:0;
+    right:0;
+    left:0;
+    height:100%;
+   z-index: 999999;
+    pointer-events: none;
+    padding:0rem;
+}

@@ -1,0 +1,301 @@
+/* IMPORT FRAGMENTS */
+
+@import '../fragments/colors.scss';
+@import '../fragments/mixins.scss';
+
+
+.skills{
+    @include sectionBottom;
+    width: 100%;
+}
+
+.skills-content{
+@include flex-row;
+justify-content: center;
+flex-wrap: wrap;
+gap:1rem;
+width: 100%;
+white-space: none;
+
+    .skills-box{
+
+        @include flex-column;
+        align-items: center;
+        
+     border: 1px solid white;
+       width:150px;
+       height:150px;
+       padding:1.5rem;
+       gap:1rem;
+     cursor: pointer;
+
+       @include transition3s;
+
+
+       &:hover{
+
+       border:1px solid red;
+         transform: scale(1.06);
+         .skill-text{
+            color:$main-color;
+        }
+         
+       
+
+         &:first-child:hover{
+         
+            border:1px solid orange;
+
+           
+         }
+         &:nth-child(2):hover{
+         
+            border:1px solid rgb(235, 93, 235);
+         }
+         &:nth-child(4):hover{
+         
+            border:1px solid aqua;
+         }
+         &:nth-child(5):hover{
+         
+            border:1px solid #FFD43B;
+         }
+         &:nth-child(6):hover{
+         
+            border:1px solid white;
+         }
+         &:nth-child(7):hover{
+         
+            border:1px solid #74C0FC;
+         }
+         &:nth-child(8):hover{
+         
+            border:1px solid lime;
+         }
+         &:nth-child(9):hover{
+         
+            border:1px solid white;
+         }
+         &:nth-child(10):hover{
+         
+            border:1px solid lime;
+         }
+         &:nth-child(11):hover{
+         
+            border:1px solid rgb(89, 186, 234);
+         }
+         &:nth-child(13):hover{
+         
+            border:1px solid aqua;
+         }
+         &:nth-child(14):hover{
+         
+            border:1px solid lime;
+         }
+         &:nth-child(15):hover{
+         
+            border:1px solid white;
+         }
+         &:nth-child(16):hover{
+         
+            border:1px solid orange;
+         }
+         &:nth-child(17):hover{
+         
+            border:1px solid pink;
+         }
+         &:nth-child(19):hover{
+         
+            border:1px solid papayawhip;
+         }
+       }
+        .skill-text{
+
+            font-weight: 200;
+            gap:3rem;
+        }
+    }
+}
+
+
+
+/* RESPONSIVE STYLES */
+
+@media(max-width:366px){
+
+
+    .skills-content{
+        @include flex-row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        
+            .skills-box{
+        
+                @include flex-column;
+                align-items: center;
+                
+             border: 1px solid white;
+               width:135px;
+               height:135px;
+               padding:1rem;
+               gap:0.7rem;
+                .skill-text{
+        
+                    font-weight: 200;
+                    gap:3rem;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+}
+@media(max-width:337px){
+
+
+    .skills-content{
+        @include flex-row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        
+            .skills-box{
+        
+                @include flex-column;
+                align-items: center;
+                
+             border: 1px solid white;
+               width:130px;
+               height:130px;
+               padding:1rem;
+               gap:0.7rem;
+                .skill-text{
+        
+                    font-weight: 200;
+                    gap:3rem;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+}
+@media(max-width:337px){
+
+
+    .skills-content{
+        @include flex-row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        
+            .skills-box{
+        
+                @include flex-column;
+                align-items: center;
+                
+             border: 1px solid white;
+               width:125px;
+               height:125px;
+               padding:1rem;
+               gap:0.7rem;
+                .skill-text{
+        
+                    font-weight: 200;
+                    gap:3rem;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+}
+@media(max-width:316px){
+
+
+    .skills-content{
+        @include flex-row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        
+            .skills-box{
+        
+                @include flex-column;
+                align-items: center;
+                
+             border: 1px solid white;
+               width:120px;
+               height:120px;
+               padding:1rem;
+               gap:0.7rem;
+
+
+               &:hover{
+
+               
+                  transform: scale(1);}
+                .skill-text{
+        
+                    font-weight: 200;
+                    gap:3rem;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+}
+@media(max-width:316px){
+
+
+    .skills-content{
+        @include flex-row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        
+            .skills-box{
+        
+                @include flex-column;
+                align-items: center;
+                
+             border: 1px solid white;
+               width:120px;
+               height:120px;
+               padding:1rem;
+               gap:0.7rem;
+                .skill-text{
+        
+                    font-weight: 200;
+                    gap:3rem;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+}
+@media(max-width:310px){
+
+
+    .skills-content{
+        @include flex-row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        
+            .skills-box{
+        
+                @include flex-column;
+                align-items: center;
+                
+             border: 1px solid white;
+               width:115px;
+               height:115px;
+               padding:1rem;
+               gap:0.7rem;
+                .skill-text{
+        
+                    font-weight: 200;
+                    gap:3rem;
+                }
+            }
+        }
+}

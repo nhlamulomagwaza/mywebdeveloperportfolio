@@ -1,0 +1,67 @@
+//FLEX MIXINS
+
+
+@mixin flex-row{
+
+    display:flex;
+ 
+    align-items: center;
+}
+
+@mixin flex-column{
+    display:flex;
+    flex-direction: column;
+justify-content: center;
+}
+
+
+
+/* GLOBAL PADDING */
+
+
+@mixin globalPadding{
+
+    padding: 0rem 9rem;
+}
+
+
+/* TRANSITION */
+
+@mixin transition2s{
+    transition: .2s ease-in-out;
+}
+
+@mixin transition3s{
+    transition: .3s ease-in-out;
+}
+
+
+/* BUTTON STYLES */
+
+
+@mixin buttonStyles{
+
+    background-color: transparent;
+    border:1px solid white;
+    padding:0.7rem 2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    @include transition3s;
+
+    &:hover{
+        border:1px solid $main-color;
+        color:$main-color;
+       
+
+    }
+}
+
+
+/* SECTION BOTTOM */
+
+
+@mixin sectionBottom{
+
+
+    margin-bottom: 8rem;
+}

@@ -1,0 +1,513 @@
+@import '../fragments/colors.scss';
+@import '../fragments/mixins.scss';
+
+
+.works{
+    @include sectionBottom;
+
+
+    .works-section-titles{
+
+        font-size: 2rem;
+        font-weight: bolder;
+        position: relative;
+     
+       margin:0 auto;
+       text-align: center;
+       margin-bottom: 5rem;
+     
+       
+       
+
+        &::before{
+            content:"";
+            width:180px;
+            height:6px;
+            background-color: $main-color;
+            position: absolute;
+            top:40px;
+          
+
+        }
+
+    }
+}
+
+
+.works-content{
+
+
+    @include flex-row;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap: wrap;
+
+    .work-card{
+text-align: center;
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+        width:330px;
+        height:400px;
+        border:1px solid white;
+        padding:1rem;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        @include transition3s;
+
+        &:hover{
+
+            transform: scale(1.02);
+            border:1px solid $main-color;
+        }
+        .work-image{
+
+            background-color: transparent;
+            height:290px;
+            width:100%;
+            text-align: center;
+            margin-bottom: 1rem;
+            border-radius: 0.3rem;
+        }
+
+        .work-title{
+            font-weight: bolder;
+            margin-bottom: 0.6rem;
+        }
+        .work-summary{
+            font-weight: 400;
+            font-size: 0.9rem;
+            height:230px;
+          
+            margin: auto;
+            width: 100%;
+            @include flex-column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+/* RESPONSIVE STYLES */
+
+
+
+
+@media(max-width:805px){
+    .works{
+        @include sectionBottom;
+    
+    
+        .works-section-titles{
+    
+            font-size: 2rem;
+            font-weight: bolder;
+            position: relative;
+         
+           margin:0 auto;
+           text-align: center;
+           margin-bottom: 5rem;
+         
+           
+           
+    
+            &::before{
+                content:"";
+                width:180px;
+                height:6px;
+                background-color: $main-color;
+                position: absolute;
+                top:40px;
+              
+    
+            }
+    
+        }
+    }
+    
+    
+    .works-content{
+    
+    
+        @include flex-row;
+        justify-content: center;
+        gap:1rem;
+        flex-wrap: wrap;
+    
+        .work-card{
+    text-align: center;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            width:330px;
+            height:400px;
+            border:1px solid white;
+            padding:1rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+            .work-image{
+    
+                background-color: white;
+                height:290px;
+                width:100%;
+                text-align: center;
+                margin-bottom: 1rem;
+                border-radius: 0.3rem;
+            }
+    
+            .work-title{
+                font-weight: bolder;
+                margin-bottom: 0.6rem;
+            }
+            .work-summary{
+                font-weight: 400;
+                font-size: 0.9rem;
+                height:230px;
+              
+                margin: auto;
+                width: 100%;
+                @include flex-column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+
+}
+@media(max-width:790px){
+    .works{
+        @include sectionBottom;
+    
+    
+        .works-section-titles{
+    
+            font-size: 2rem;
+            font-weight: bolder;
+            position: relative;
+         
+           margin:0 auto;
+           text-align: center;
+           margin-bottom: 5rem;
+         
+           
+           
+    
+            &::before{
+                content:"";
+                width:180px;
+                height:6px;
+                background-color: $main-color;
+                position: absolute;
+                top:40px;
+              
+    
+            }
+    
+        }
+    }
+    
+    
+    .works-content{
+    
+    
+        @include flex-row;
+        justify-content: center;
+        gap:1rem;
+        flex-wrap: wrap;
+    
+        .work-card{
+    text-align: center;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            width:310px;
+            height:380px;
+            border:1px solid white;
+            padding:1rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+            .work-image{
+    
+                background-color: white;
+                height:270px;
+                width:100%;
+                text-align: center;
+                margin-bottom: 1rem;
+                border-radius: 0.3rem;
+            }
+    
+            .work-title{
+                font-weight: bolder;
+                margin-bottom: 0.6rem;
+            }
+            .work-summary{
+                font-weight: 400;
+                font-size: 0.9rem;
+                height:230px;
+              
+                margin: auto;
+                width: 100%;
+                @include flex-column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+
+}
+@media(max-width:750px){
+    .works{
+        @include sectionBottom;
+    
+    
+        .works-section-titles{
+    
+            font-size: 2rem;
+            font-weight: bolder;
+            position: relative;
+         
+           margin:0 auto;
+           text-align: center;
+           margin-bottom: 5rem;
+         
+           
+           
+    
+            &::before{
+                content:"";
+                width:180px;
+                height:6px;
+                background-color: $main-color;
+                position: absolute;
+                top:40px;
+              
+    
+            }
+    
+        }
+    }
+    
+    
+    .works-content{
+    
+    
+        @include flex-row;
+        justify-content: center;
+        gap:0.5rem;
+        flex-wrap: wrap;
+    
+        .work-card{
+    text-align: center;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            width:300px;
+            height:380px;
+            border:1px solid white;
+            padding:1rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+            .work-image{
+    
+                background-color: white;
+                height:270px;
+                width:100%;
+                text-align: center;
+                margin-bottom: 1rem;
+                border-radius: 0.3rem;
+            }
+    
+            .work-title{
+                font-weight: bolder;
+                margin-bottom: 0.6rem;
+            }
+            .work-summary{
+                font-weight: 400;
+                font-size: 0.9rem;
+                height:230px;
+              
+                margin: auto;
+                width: 100%;
+                @include flex-column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+
+}
+@media(max-width:720px){
+    .works{
+        @include sectionBottom;
+    
+    
+        .works-section-titles{
+    
+            font-size: 2rem;
+            font-weight: bolder;
+            position: relative;
+         
+           margin:0 auto;
+           text-align: center;
+           margin-bottom: 5rem;
+         
+           
+           
+    
+            &::before{
+                content:"";
+                width:180px;
+                height:6px;
+                background-color: $main-color;
+                position: absolute;
+                top:40px;
+              
+    
+            }
+    
+        }
+    }
+    
+    
+    .works-content{
+    
+    
+        @include flex-row;
+        justify-content: center;
+        gap:2rem;
+        flex-wrap: wrap;
+    
+        .work-card{
+    text-align: center;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            width:330px;
+            height:400px;
+            border:1px solid white;
+            padding:1rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+            .work-image{
+    
+                background-color: white;
+                height:290px;
+                width:100%;
+                text-align: center;
+                margin-bottom: 1rem;
+                border-radius: 0.3rem;
+            }
+    
+            .work-title{
+                font-weight: bolder;
+                margin-bottom: 0.6rem;
+            }
+            .work-summary{
+                font-weight: 400;
+                font-size: 0.9rem;
+                height:230px;
+              
+                margin: auto;
+                width: 100%;
+                @include flex-column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+
+}
+@media(max-width:386px){
+    .works{
+        @include sectionBottom;
+    
+    
+        .works-section-titles{
+    
+            font-size: 2rem;
+            font-weight: bolder;
+            position: relative;
+         
+           margin:0 auto;
+           text-align: center;
+           margin-bottom: 5rem;
+         
+           
+           
+    
+            &::before{
+                content:"";
+                width:180px;
+                height:6px;
+                background-color: $main-color;
+                position: absolute;
+                top:40px;
+              
+    
+            }
+    
+        }
+    }
+    
+    
+    .works-content{
+    
+    
+        @include flex-row;
+        justify-content: center;
+        gap:2rem;
+        flex-wrap: wrap;
+    
+        .work-card{
+    text-align: center;
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            width:330px;
+            height:400px;
+            border:1px solid white;
+            padding:1rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+
+            &:hover{
+
+                transform: scale(1);
+                border:1px solid $main-color;
+            }
+
+            .work-image{
+    
+                background-color: white;
+                height:290px;
+                width:100%;
+                text-align: center;
+                margin-bottom: 1rem;
+                border-radius: 0.3rem;
+            }
+    
+            .work-title{
+                font-weight: bolder;
+                margin-bottom: 0.6rem;
+            }
+            .work-summary{
+                font-weight: 400;
+                font-size: 0.9rem;
+                height:230px;
+              
+                margin: auto;
+                width: 100%;
+                @include flex-column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+
+}

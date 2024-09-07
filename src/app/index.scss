@@ -1,0 +1,142 @@
+/* TAILWIND IMPORTS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* FRAGMENT IMPORTS */
+
+@import '../styles/fragments/colors.scss';
+@import '../styles/fragments/mixins.scss';
+/* CSS RESETS */
+
+*, *::before, *::after{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+html{
+    width:100%;
+    overflow-x: hidden;
+    @include globalPadding;
+    scroll-behavior: smooth;
+    scrollbar-color:$main-color black;
+    -webkit-scrollbar-track: $main-color; /* This will work on Microsoft Edge */
+    
+    scrollbar-width: normal;
+}
+
+img{
+    display:block}
+
+
+    ul, li{
+
+        list-style: none;
+        list-style-type: none;
+    }
+
+    body{
+      
+       
+        color:$text-color;
+        width:100%;
+        overflow-x: hidden;
+        background-color: $background-color;
+    }
+
+
+    a{
+
+        text-decoration: none;
+    };
+
+    section{
+        min-height: 100vh;
+        scroll-margin-top: 9rem;
+        z-index: 500000;
+       
+        
+    }
+
+
+    /* GLOBAL STYLES */
+
+    .section-titles{
+
+        font-size: 2rem;
+        font-weight: bolder;
+        position: relative;
+     
+       margin:0 auto;
+       text-align: center;
+       margin-bottom: 5rem;
+     
+       
+       
+
+        &::before{
+            content:"";
+            width:80px;
+            height:6px;
+            background-color: $main-color;
+            position: absolute;
+            top:40px;
+          
+
+        }
+    }
+
+
+
+
+/* RESPONSIVE STYLES */
+
+    @media(max-width:1200px){
+
+
+        html{
+        
+            padding:0rem 5rem;
+        }
+           }
+
+           @media(max-width:1150px){
+        
+        
+            html{
+        
+            padding:0rem 4rem;
+        }
+           }
+
+
+           @media(max-width:1000px){
+        
+        
+        html{
+        
+            padding:0rem 3rem;
+        }
+           }
+           @media(max-width:500px){
+        
+        
+        html{
+        
+            padding:0rem 2rem;
+        }
+           }
+         
+           @media(max-width:466px){
+        
+        
+        html{
+        
+            padding:0rem 1rem;
+        }
+           }
+         

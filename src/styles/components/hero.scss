@@ -1,0 +1,237 @@
+/* IMPORT FRAGMENTS */
+
+@import '../fragments/colors.scss';
+@import '../fragments/mixins.scss';
+
+.hero{
+
+
+   
+    @include flex-column;
+    
+    align-items: center;
+
+    .hero-showcase{
+         text-align: center;
+        .hero-title{
+            font-size: 4.3rem;
+            font-weight: bolder;
+        }
+
+        .hero-occupation{
+       
+        width:55ch;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 300;
+    }
+    }
+
+    .hero-cta{
+
+margin-top: 3rem;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        gap:0.6rem;
+ 
+    .hero-explore{
+        @include buttonStyles;
+        @include flex-row;
+        gap:0.6rem;
+    }
+    }}
+
+
+
+
+
+    /* RESPONSIVE STYLES */
+
+  
+           
+ @media(max-width:776px){
+        
+    .hero{
+
+        .hero-showcase{
+             text-align: center;
+            .hero-title{
+                font-size: 3.5rem;
+                
+            }
+    
+            .hero-occupation{
+           
+            width:46ch;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        }
+    
+        
+        }}
+    
+    
+ @media(max-width:666px){
+        
+    .hero{
+
+        .hero-showcase{
+             text-align: center;
+            .hero-title{
+                font-size: 3.5rem;
+                
+            }
+    
+            .hero-occupation{
+           
+            width:40ch;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        }
+    
+        
+        }}
+    
+ @media(max-width:500px){
+        
+    .hero{
+
+        .hero-showcase{
+             text-align: center;
+            .hero-title{
+                font-size: 3.5rem;
+                
+            }
+    
+            .hero-occupation{
+           
+            width:40ch;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        }
+    
+        
+        }}
+    
+    
+ @media(max-width:480px){
+        
+    .hero{
+
+        .hero-showcase{
+             text-align: center;
+            .hero-title{
+                font-size: 3.5rem;
+                
+            }
+    
+            .hero-occupation{
+           
+            width:35ch;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        }
+    
+        
+        }}
+    
+ @media(max-width:420px){
+        
+    .hero{
+
+        .hero-showcase{
+             text-align: center;
+            .hero-title{
+                font-size: 3.5rem;
+                
+            }
+    
+            .hero-occupation{
+           
+            width:30ch;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+        
+        }
+        .hero-cta{
+            @include flex-column;
+            align-items: center;
+        }
+        
+        }}
+    
+    
+ @media(max-width:360px){
+        
+    .hero{
+
+        .hero-showcase{
+             text-align: center;
+            .hero-title{
+                font-size: 2.8rem;
+                
+            }
+    
+            .hero-occupation{
+           
+            width:28ch;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        
+        }
+        .hero-cta{
+            @include flex-column;
+           
+        }
+        
+        }}
+    
+ @media(max-width:320px){
+        
+    .hero{
+        margin-top: 1.5rem;
+        .hero-showcase{
+             text-align: center;
+            .hero-title{
+                font-size: 2.8rem;
+                
+            }
+    
+            .hero-occupation{
+           
+            width:28ch;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        
+        }
+        .hero-cta{
+            @include flex-column;
+           
+        }
+        
+        }}
+    
+    
+    
+      
+           
+         

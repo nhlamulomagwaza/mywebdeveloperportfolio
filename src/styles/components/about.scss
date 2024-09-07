@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Luxurious+Script&display=swap');
+@import '../fragments/colors.scss';
+@import '../fragments/mixins.scss';
+
+.about{
+
+
+
+ width: 100%;
+@include sectionBottom;
+ .about-titles{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 1.2rem;
+width:100%;
+
+    @include flex-row;
+    align-items: center;
+ gap:2rem;
+
+ .about-background-title{
+
+    width:60%;
+ }
+ .about-experience-title{
+
+    width:50%;
+ }
+
+    
+ }
+    .about-content{
+
+
+        @include flex-row;
+        align-items: center;
+        gap:2rem;
+       
+
+        .about-background{
+            width:60%;
+
+            .about-background-title-mobile{
+                margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 1.2rem;
+width:100%;
+display:none;
+            }
+
+            .about-background-description{
+                margin-bottom: 1rem;
+            }
+
+
+            .about-background-education{
+
+                .about-background-education-details{
+                    @include flex-row;
+                    align-items: center;
+                    gap:1rem;
+                    margin-bottom: 0.5rem;
+
+                    .about-school-name{
+                        margin-bottom: 0.3rem;
+                       
+                        font-family:  cursive;
+                    }
+                    .about-qualification-name{
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        .about-experience{
+            .about-experience-title-mobile{
+                margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 1.2rem;
+width:100%;
+margin-top: 2rem;
+display:none;
+            }
+            width:50%;
+
+            .experience-card{
+                border:0.7px solid white;
+                height:fit-content;
+                padding:2rem;
+                border-radius: 10px;
+                @include flex-column;
+               
+                gap:2rem;
+                margin-bottom: 1.5rem;
+             
+                    @include transition3s;
+
+                    &:hover{
+                        border:1px solid $main-color;
+                    }
+                .experience-header{
+                    @include flex-row;
+                    align-items: center;
+                    gap:1rem;
+                }
+                .experience-details{
+                 @include flex-column;
+                 gap:0.6rem;
+                 .role-title{
+                    font-weight: bolder;
+                 }
+               
+                }
+                
+            }
+        }
+    }
+}
+
+
+ /* RESPONSIVE STYLES */
+
+ @media(max-width:1076px){
+
+   .about{
+
+    .about-content{
+
+        .about-experience{
+
+            .experience-card{
+
+
+                .experience-header{
+
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+                .experience-details{
+                    .companyname-date{
+                        text-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+   }
+ }
+ @media(max-width:940px){
+
+   .about{
+
+    .about-content{
+
+        .about-experience{
+
+            .experience-card{
+                padding:1rem;
+                .experience-details{
+                    .companyname-date{
+                        text-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+   }
+ }
+ @media(max-width:786px){
+
+   .about{
+
+    .about-content{
+        gap:1.5rem;
+        .about-experience{
+
+            .experience-card{
+                padding:1rem;
+                .experience-details{
+                    .companyname-date{
+                        text-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+   }
+ }
+ @media(max-width:710px){
+
+   .about{
+    .about-titles{
+        display:none;
+    }
+    .about-content{
+        gap:1.5rem;
+        @include flex-column;
+        justify-content: center;
+        text-align: center;
+
+
+        .about-background{
+            width:100%;
+            text-align: center;
+
+            .about-background-title-mobile{
+            display: block;
+            }
+
+            .about-background-education{
+               
+              
+                width: 100%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                .about-background-education-details{
+                   
+                    @include flex-row;
+                  
+                    gap:0.6rem;
+                    margin-bottom: 0.5rem;
+
+                    .education-details-wrapper{
+                      text-align: start;
+                    }
+
+                    .about-school-name{
+                        margin-bottom: 0.3rem;
+text-wrap: nowrap;
+                        font-family:  cursive;
+                    }
+                    .about-qualification-name{
+                        font-weight: 300;
+                        text-wrap: nowrap;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+        .about-experience{
+      width:100%;
+
+      .about-experience-title-mobile{
+        display: block;
+        }
+
+            .experience-card{
+                padding:1rem;
+                text-align: center;
+                .experience-details{
+                    .companyname-date{
+                        text-wrap: wrap;
+                    }
+                }
+
+                .experience-header{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+
+
+
+    }
+   }
+ }
+ @media(max-width:693px){
+
+   .about{
+    .about-titles{
+        display:none;
+    }
+    .about-content{
+        gap:1.5rem;
+        @include flex-column;
+        justify-content: center;
+        text-align: center;
+
+
+        .about-background{
+            width:100%;
+            text-align: center;
+
+
+
+            .about-background-education{
+               
+              
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .about-background-education-details{
+                   
+                    @include flex-row;
+                  
+                    gap:1rem;
+                    margin-bottom: 0.5rem;
+                       
+
+                       .education-icon{
+                        width:100px;
+                       }
+                    
+                    .education-details-wrapper{
+                      text-align: start;
+                    }
+
+                    .about-school-name{
+                        margin-bottom: 0.3rem;
+                        width:200px;
+text-wrap: wrap;
+                        font-family:  cursive;
+                     
+                    }
+                    .about-qualification-name{
+                        font-weight: 300;
+                        text-wrap: wrap;
+                        width:170px;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+        .about-experience{
+      width:100%;
+            .experience-card{
+                padding:1rem;
+                .experience-details{
+                    .companyname-date{
+                        text-wrap: wrap;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+   }
+ }
+ @media(max-width:400px){
+
+   .about{
+    .about-titles{
+        display:none;
+    }
+    .about-content{
+        gap:1.5rem;
+        @include flex-column;
+        justify-content: center;
+        text-align: center;
+
+
+        .about-background{
+            width:100%;
+            text-align: center;
+
+
+
+            .about-background-education{
+               
+              
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .about-background-education-details{
+                   
+                    @include flex-row;
+                  
+                    gap:1rem;
+                    margin-bottom: 0.5rem;
+
+                    .education-details-wrapper{
+                      text-align: start;
+                    }
+
+                    .about-school-name{
+                        margin-bottom: 0.3rem;
+text-wrap: wrap;
+                        font-family:  cursive;
+                     
+                    }
+                    .about-qualification-name{
+                        font-weight: 300;
+                        text-wrap: wrap;
+                  
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+        .about-experience{
+      width:100%;
+            .experience-card{
+                padding:1rem;
+                
+                .experience-header{
+
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                
+                .experience-details{
+                    .companyname-date{
+                        text-wrap: wrap;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+   }
+ }
+ @media(max-width:345px){
+
+   .about{
+    .about-titles{
+        display:none;
+    }
+    .about-content{
+        gap:1.5rem;
+        @include flex-column;
+        justify-content: center;
+        text-align: center;
+
+
+        .about-background{
+            width:100%;
+            text-align: center;
+            
+
+
+            .about-background-education{
+               
+              
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .about-background-education-details{
+                   
+                    @include flex-row;
+                  
+                    gap:1rem;
+                    margin-bottom: 0.5rem;
+
+                    .education-details-wrapper{
+                      text-align: start;
+                    }
+
+                    .about-school-name{
+                        margin-bottom: 0.3rem;
+                        width:fit-content;
+text-wrap: wrap;
+                        font-family:  cursive;
+                     
+                    }
+                    .about-qualification-name{
+                        font-weight: 300;
+                        text-wrap: wrap;
+                        width:fit-content;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+        .about-experience{
+      width:100%;
+            .experience-card{
+                padding:1rem;
+                
+                .experience-header{
+
+                    display:flex;
+                    flex-direction: column;
+                }
+                
+                
+                .experience-details{
+                    .companyname-date{
+                        text-wrap: wrap;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+   }
+ }
