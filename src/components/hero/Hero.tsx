@@ -26,7 +26,7 @@ const Hero = () => {
  <a href="#about" className='hero-explore'><CiRead/><div className="hero-btn-text">Explore</div></a>
  
    
-   <a href='https://nhlamulomagwaza.co.za/Nhlamulo%20Magwaza%20Web%20Developer.pdf' target='_blank' className="hero-explore"><IoCloudDownloadOutline /><div className="hero-btn-text">Resume</div></a>
+   <a href='https://resume.nhlamulomagwaza.co.za/Nhlamulo%20Magwaza%20Web%20Developer.pdf' target='_blank' className="hero-explore"><IoCloudDownloadOutline /><div className="hero-btn-text">Resume</div></a>
    </div>
 
 
