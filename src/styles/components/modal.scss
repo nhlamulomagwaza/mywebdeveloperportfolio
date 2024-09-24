@@ -1841,7 +1841,7 @@ opacity: 0;
         background-color: rgba(0, 0, 0, 0.548);
         top: 0;
     
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         z-index: 1000;
         opacity: 1;
@@ -2059,7 +2059,7 @@ opacity: 0;
         background-color: rgba(0, 0, 0, 0.548);
         top: 0;
     
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         z-index: 1000;
         opacity: 1;
@@ -2283,7 +2283,7 @@ opacity: 0;
         background-color: rgba(0, 0, 0, 0.548);
         top: 0;
     
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         z-index: 1000;
         opacity: 1;
@@ -2504,3 +2504,27 @@ opacity: 0;
 
 
  }
+
+
+
+ @media (max-width: 900px) {
+
+
+    .modal{
+        .modal-content{
+
+            .modal-content-details{
+                .model-content-header{
+                    .modal-work-title {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                      }
+
+                }
+               
+            }
+        }
+    }
+   
+  }

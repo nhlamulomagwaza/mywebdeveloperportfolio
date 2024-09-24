@@ -92,9 +92,15 @@ const getTechIcon = (tech: string) => {
         </div>
         <div className="modal-content-details">
           <div className="modal-content-header">
-          <div className="modal-work-title">{work?.title}</div>
+          <div className="modal-work-title" style={{ textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>
+
+  {window.innerWidth > 900 && work?.title.length > 12 ? work?.title.slice(0, 12) + '...' : work?.title}
+</div>
           <div className="modal-cta">
-            <button className="modal-cta-btn"><FaEye size={15} /> <a className="livesite-text" href={work?.livesite} target='_blank'>view live site</a></button>
+            <button className="modal-cta-btn" ><FaEye size={15}  /> <a className="livesite-text" onClick={()=>{
+                 alert('due to the site being hosted on a shared cloud platform, there will be a slight minute delay on load time. Other than that everything will continue as normal😁')
+
+            }} href={work?.livesite} target='_blank'>view live site</a></button>
             {work?.github == null? null: <button className="modal-cta-btn"><FaGithub size={15}  /> <a className="livesite-text" href={work?.github} target='_blank'>github code</a></button>}
           </div></div>
         
